@@ -1,4 +1,3 @@
-// Thermometer.js
 import { useState, useEffect, useRef } from 'react';
 import { View, Text, Animated, StyleSheet } from 'react-native';
 import Svg, { Circle, G } from 'react-native-svg';

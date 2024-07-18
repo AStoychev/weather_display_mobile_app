@@ -7,7 +7,7 @@ import Search from "../components/Search";
 // import Thermometer from "../components/Thermometer";
 import Error from "../components/Error";
 import LoadingOverlay from "../components/LoadingOverlay";
-import Thermometer from "../components/ThermometherShape";
+import Thermometer from "../components/ThermometerShape";
 
 const thermometer = require('../assets/homePage/thermometer.png')
 

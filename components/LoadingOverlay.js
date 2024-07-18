@@ -9,8 +9,6 @@ function LoadingOverlay({ message, color }) {
   );
 }
 
-export default LoadingOverlay;
-
 const styles = StyleSheet.create({
   rootContainer: {
     // position: 'absolute',
@@ -29,3 +27,5 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
 });
+
+export default LoadingOverlay;
