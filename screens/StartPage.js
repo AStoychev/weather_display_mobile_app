@@ -1,4 +1,4 @@
-import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
+import { View, Text, Image, StyleSheet } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
 import GradientBackground from "../components/GradientBackground";
@@ -22,7 +22,7 @@ const StartPage = () => {
                     <Text style={styles.textWeather}>Weather</Text>
                     <Text style={styles.textForecast}>ForeCasts</Text>
                 </View>
-                <CustomButton onHandlePress={onGetStartHandle} text={'Get Start'} fontSize={20}/>
+                <CustomButton onHandlePress={onGetStartHandle} text={'Get Start'} fontSize={20} testID={'custom-button'}/>
             </View>
         </GradientBackground>
     )
@@ -51,6 +51,5 @@ const styles = StyleSheet.create({
         fontWeight: '600'
     }
 });
-
 
 export default StartPage;

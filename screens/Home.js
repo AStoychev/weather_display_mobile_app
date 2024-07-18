@@ -1,18 +1,24 @@
 import { View, Text, Image, ScrollView, KeyboardAvoidingView, Platform, StyleSheet } from "react-native";
+import { useSelector } from "react-redux";
+
 import useFetchData from "../hooks/useFetchData";
 
 import GradientBackground from "../components/GradientBackground";
 import Greeting from "../components/Greeting";
 import Search from "../components/Search";
-// import Thermometer from "../components/Thermometer";
-import Error from "../components/Error";
-import LoadingOverlay from "../components/LoadingOverlay";
 import Thermometer from "../components/ThermometerShape";
+import Error from "../components/Error";
+import Carrot from "../components/Carrot";
+import LoadingOverlay from "../components/LoadingOverlay";
+
+import { capitalizeFirstLetter } from "../functions/capitalizeFirstLetter";
 
 const thermometer = require('../assets/homePage/thermometer.png')
 
 const Home = () => {
-    const { onHandlePress, onErrorMessageHandle, temperature, city, loading, error } = useFetchData();
+    const { onHandlePress, onErrorMessageHandle, temperatures, city, loading, error } = useFetchData();
+
+    const cityCarrot = useSelector(state => (state.data.cityQuery).toLowerCase());
 
     return (
         <GradientBackground>
@@ -21,22 +27,28 @@ const Home = () => {
                 behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
                 keyboardVerticalOffset={Platform.OS === 'ios' ? 0 : 0}
             >
-                {error && <Error onErrorMessageHandle={onErrorMessageHandle} modalVisible={error} />}
+                {error && cityCarrot === 'carrot'
+                    ?
+                    <Carrot onErrorMessageHandle={onErrorMessageHandle} modalVisible={error} />
+                    :
+                    <Error onErrorMessageHandle={onErrorMessageHandle} modalVisible={error} />
+                }
+
                 <View style={styles.wrapper}>
                     <View style={styles.content}>
                         <Greeting />
                         <Search onHandlePress={onHandlePress} />
                     </View>
-                    {!loading && <Text style={styles.query}>{city}</Text>}
+                    {!loading && <Text style={styles.query}>{capitalizeFirstLetter(city)}</Text>}
                     <ScrollView style={styles.dataWrapper}>
                         {loading ? <LoadingOverlay message={'Loading...'} color={'#ffffff'} />
                             :
                             <>
-                                {temperature ?
+                                {temperatures ?
                                     <View style={styles.data}>
-                                        <Thermometer name="°C" progress={temperature.celsiumTemp} inputRange={[0, 100]} color={'rgb(241,69,49)'} />
-                                        <Thermometer name="°F" progress={temperature.fahrenheitTemp} inputRange={[0, 212]} color={'rgb(126,217,86)'} />
-                                        <Thermometer name="K" progress={temperature.kelvinTemp} inputRange={[0, 375]} color={'rgb(56,182,255)'} />
+                                        <Thermometer name="°C" temperature={temperatures.celsiusTemp} inputRange={[0, 100]} color={'rgb(241,69,49)'} increaseNumber={2} />
+                                        <Thermometer name="°F" temperature={temperatures.fahrenheitTemp} inputRange={[0, 212]} color={'rgb(126,217,86)'} increaseNumber={5} />
+                                        <Thermometer name="K" temperature={temperatures.kelvinTemp} inputRange={[0, 375]} color={'rgb(56,182,255)'} increaseNumber={10} />
                                     </View>
                                     :
                                     <View style={styles.imageWrapper}>

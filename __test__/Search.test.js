@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 import renderer, { act } from 'react-test-renderer';
 import { useDispatch } from 'react-redux';
-import { setCity } from '../redux/slices/cityQuery';
+import { setCity } from '../redux/slices/citySlice';
 import Search from '../components/Search';
 
 jest.mock('react-redux', () => ({
