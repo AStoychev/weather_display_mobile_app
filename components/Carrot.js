@@ -2,10 +2,9 @@ import { View, Text, Modal, Image, Dimensions, StyleSheet } from "react-native";
 
 import CustomButton from "./CustomButton";
 
-const animation = require('../assets/homePage/error.gif')
-const { width, height } = Dimensions.get('window');
+const animation = require('../assets/homePage/carrot.gif')
 
-const Error = ({ onErrorMessageHandle, modalVisible }) => {
+const Carrot = ({ onErrorMessageHandle, modalVisible }) => {
     return (
         <Modal
             animationType="slide"
@@ -20,7 +19,7 @@ const Error = ({ onErrorMessageHandle, modalVisible }) => {
                     <View style={styles.textWrapper}>
                         <Text style={styles.text}>Opps!</Text>
                         <Text style={styles.text}>An error occured while loading!</Text>
-                        <Text style={styles.text}>Please make sure the city is correct or try again!</Text>
+                        <Text style={styles.text}>Keep calm and <Text style={styles.carrot}>carrot</Text> on</Text>
                     </View>
                     <CustomButton onHandlePress={onErrorMessageHandle} text={'OK'} fontSize={15} testID="ok-button"/>
                 </View>
@@ -54,6 +53,7 @@ const styles = StyleSheet.create({
     textWrapper: {
         textAlign: 'center',
         alignItems: 'center',
+        paddingHorizontal: 30,
         paddingTop: 30
     },
     text: {
@@ -62,6 +62,10 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: '600'
     },
+    carrot: {
+        color: '#fe5c12',
+        fontWeight: '800'
+    }
 })
 
-export default Error;
+export default Carrot;

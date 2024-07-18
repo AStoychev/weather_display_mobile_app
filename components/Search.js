@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { setCity } from "../redux/slices/cityQuery";
+
+import { setCity } from "../redux/slices/citySlice";
 
 import { View, TextInput, TouchableOpacity, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";

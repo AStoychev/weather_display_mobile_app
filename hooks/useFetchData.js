@@ -1,21 +1,14 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useSelector } from "react-redux";
 import { getWeather } from "../services/getWeatherData";
 
 function useFetchData() {
-    const [temperature, setTemperature] = useState(null);
+    const [temperatures, setTemperature] = useState(null);
     const [city, setCity] = useState('');
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(false);
 
     const cityQuery = useSelector(state => state.data.cityQuery);
-
-    function capitalizeFirstLetter(word) {
-        const capitalized =
-            word.charAt(0).toUpperCase()
-            + word.slice(1)
-        return capitalized
-    }
 
     function onErrorMessageHandle() {
         setError(false);
@@ -25,10 +18,10 @@ function useFetchData() {
         setError(false)
         try {
             setLoading(true);
-            const { celsium, fahrenheit, kelvin } = await getWeather(query);
-            setCity(capitalizeFirstLetter(query));
+            const { celsius, fahrenheit, kelvin } = await getWeather(query);
+            setCity(query);
             setTemperature({
-                celsiumTemp: celsium,
+                celsiusTemp: celsius,
                 fahrenheitTemp: fahrenheit,
                 kelvinTemp: kelvin
             });
@@ -40,7 +33,7 @@ function useFetchData() {
         }
     }
 
-    return { onHandlePress, onErrorMessageHandle, temperature, city, loading, error }
+    return { onHandlePress, onErrorMessageHandle, temperatures, city, loading, error }
 }
 
 export default useFetchData;
