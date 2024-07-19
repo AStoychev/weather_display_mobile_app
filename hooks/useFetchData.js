@@ -8,8 +8,6 @@ function useFetchData() {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(false);
 
-    const cityQuery = useSelector(state => state.data.cityQuery);
-
     function onErrorMessageHandle() {
         setError(false);
     };

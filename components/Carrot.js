@@ -1,8 +1,8 @@
-import { View, Text, Modal, Image, Dimensions, StyleSheet } from "react-native";
+import { View, Text, Modal, Image, StyleSheet } from "react-native";
 
 import CustomButton from "./CustomButton";
 
-const animation = require('../assets/homePage/carrot.gif')
+const animation = require('../assets/images/carrot.gif')
 
 const Carrot = ({ onErrorMessageHandle, modalVisible }) => {
     return (

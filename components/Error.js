@@ -2,7 +2,7 @@ import { View, Text, Modal, Image, Dimensions, StyleSheet } from "react-native";
 
 import CustomButton from "./CustomButton";
 
-const animation = require('../assets/homePage/error.gif')
+const animation = require('../assets/images/error.gif')
 const { width, height } = Dimensions.get('window');
 
 const Error = ({ onErrorMessageHandle, modalVisible }) => {

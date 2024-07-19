@@ -13,7 +13,7 @@ import LoadingOverlay from "../components/LoadingOverlay";
 
 import { capitalizeFirstLetter } from "../functions/capitalizeFirstLetter";
 
-const thermometer = require('../assets/homePage/thermometer.png')
+const thermometer = require('../assets/images/thermometer.png')
 
 const Home = () => {
     const { onHandlePress, onErrorMessageHandle, temperatures, city, loading, error } = useFetchData();

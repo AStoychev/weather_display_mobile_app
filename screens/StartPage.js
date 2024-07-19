@@ -4,7 +4,7 @@ import { useNavigation } from "@react-navigation/native";
 import GradientBackground from "../components/GradientBackground";
 import CustomButton from "../components/CustomButton";
 
-const weather = require('../assets/homePage/weather.png');
+const weather = require('../assets/images/weather.png');
 
 const StartPage = () => {
     const navigation = useNavigation();
