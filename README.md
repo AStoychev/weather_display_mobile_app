@@ -22,7 +22,7 @@ A mobile application that displays the temperature in Celsius, Fahrenheit and Ke
         * For iOS devices you can see here:
             - [iOS Developer Mode](https://docs.expo.dev/guides/ios-developer-mode/);
 
-        * *** Sometimes enabling developer mode may be different depending on the manufacturer and model of the device! ***
+        ***Sometimes enabling developer mode may be different depending on the manufacturer and model of the device!***
         
     - Download Expo Go to your device.
         - [Useful link - set up your environment Expo](https://docs.expo.dev/get-started/set-up-your-environment/?platform=android&device=physical)
