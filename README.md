@@ -36,8 +36,7 @@ A mobile application that displays the temperature in Celsius, Fahrenheit and Ke
 
 ## Some Screenshots
 
-**Start page**
-
 <p align="center">
+    **Start page**
   <img src="https://github.com/AStoychev/weather_display_mobile_app/blob/master/assets/Screenshots/start-screen.jpg">
 </p>
