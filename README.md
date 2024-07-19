@@ -36,7 +36,37 @@ A mobile application that displays the temperature in Celsius, Fahrenheit and Ke
 
 ## Some Screenshots
 
+**Start page**
 <p align="center">
-    **Start page**
   <img src="https://github.com/AStoychev/weather_display_mobile_app/blob/master/assets/Screenshots/start-screen.jpg">
+</p>
+
+**Home page**
+<p align="center">
+  <img src="https://github.com/AStoychev/weather_display_mobile_app/blob/master/assets/Screenshots/home.jpg">
+</p>
+
+**Search**
+<p align="center">
+  <img src="https://github.com/AStoychev/weather_display_mobile_app/blob/master/assets/Screenshots/search-first.jpg">
+</p>
+
+**Search**
+<p align="center">
+  <img src="https://github.com/AStoychev/weather_display_mobile_app/blob/master/assets/Screenshots/search-second.jpg">
+</p>
+
+**Search**
+<p align="center">
+  <img src="https://github.com/AStoychev/weather_display_mobile_app/blob/master/assets/Screenshots/search-third.jpg">
+</p>
+
+**Error Message**
+<p align="center">
+  <img src="https://github.com/AStoychev/weather_display_mobile_app/blob/master/assets/Screenshots/error.jpg">
+</p>
+
+**Something funny**
+<p align="center">
+  <img src="https://github.com/AStoychev/weather_display_mobile_app/blob/master/assets/Screenshots/carrot.jpg">
 </p>
