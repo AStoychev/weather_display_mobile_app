@@ -37,37 +37,43 @@ A mobile application that displays the temperature in Celsius, Fahrenheit and Ke
 ## Some Screenshots
 
 
-<h1 align="center">Start page</h1>
+<h3 align="center">Start page</h3>
 <p align="center">
   <img src="https://github.com/AStoychev/weather_display_mobile_app/blob/master/assets/Screenshots/start-screen.jpg">
 </p>
 
-**Home page**
+
+<h3 align="center">Home Page</h3>
 <p align="center">
   <img src="https://github.com/AStoychev/weather_display_mobile_app/blob/master/assets/Screenshots/home.jpg">
 </p>
 
-**Search**
+
+<h3 align="center">Search</h3>
 <p align="center">
   <img src="https://github.com/AStoychev/weather_display_mobile_app/blob/master/assets/Screenshots/search-first.jpg">
 </p>
 
-**Search**
+
+<h3 align="center">Search</h3>
 <p align="center">
   <img src="https://github.com/AStoychev/weather_display_mobile_app/blob/master/assets/Screenshots/search-second.jpg">
 </p>
 
-**Search**
+
+<h3 align="center">Search</h3>
 <p align="center">
   <img src="https://github.com/AStoychev/weather_display_mobile_app/blob/master/assets/Screenshots/search-third.jpg">
 </p>
 
-**Error Message**
+
+<h3 align="center">Error Message</h3>
 <p align="center">
   <img src="https://github.com/AStoychev/weather_display_mobile_app/blob/master/assets/Screenshots/error.jpg">
 </p>
 
-**Something funny**
+
+<h3 align="center">Something funny</h3>
 <p align="center">
   <img src="https://github.com/AStoychev/weather_display_mobile_app/blob/master/assets/Screenshots/carrot.jpg">
 </p>
