@@ -33,6 +33,7 @@ A mobile application that displays the temperature in Celsius, Fahrenheit and Ke
 
 6. Start the tests with command: `npm run test` .
 
+## Video [YouTube Weather Mobile App](https://www.youtube.com/shorts/6zQyilViuKM)
 
 ## Some Screenshots
 
