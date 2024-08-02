@@ -35,6 +35,8 @@ A mobile application that displays the temperature in Celsius, Fahrenheit and Ke
 
 ## Video [YouTube Weather Mobile App](https://www.youtube.com/shorts/6zQyilViuKM)
 
+[![YouTube Weather Mobile App](https://img.youtube.com/vi/shorts/6zQyilViuKM/0.jpg)](https://www.youtube.com/shorts/6zQyilViuKM)
+
 ## Some Screenshots
 
 
