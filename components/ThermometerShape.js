@@ -16,6 +16,7 @@ const Thermometer = ({ name, temperature, inputRange, color, increaseNumber }) =
             duration: (1000 + temperature),
             useNativeDriver: true,
         }).start();
+        
     }, [temperature, animatedValue]);
 
     const radius = 75;
