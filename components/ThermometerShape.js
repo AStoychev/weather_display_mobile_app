@@ -12,8 +12,8 @@ const Thermometer = ({ name, temperature, inputRange, color, increaseNumber }) =
 
     useEffect(() => {
         Animated.timing(animatedValue, {
-            toValue: temperature,
-            duration: (1000 + temperature),
+            toValue: temperature + 5,
+            duration: (1000 + temperature * 5),
             useNativeDriver: true,
         }).start();
         
@@ -67,9 +67,12 @@ const styles = StyleSheet.create({
     },
     text: {
         position: 'absolute',
+        top: '50%',
+        left: '50%',
         fontSize: 20,
         fontWeight: 'bold',
-        color: '#ffffff'
+        color: '#ffffff',
+        transform: [{ translateX: -35 }, { translateY: -20 }],
     },
     minTemperature: {
         fontSize: 12,
