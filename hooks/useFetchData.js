@@ -24,7 +24,7 @@ function useFetchData() {
             });
         } catch (error) {
             setError(true);
-            console.log('ERROR', error);
+            console.log('ERROR Fetch Data', error);
         } finally {
             setLoading(false)
         }
