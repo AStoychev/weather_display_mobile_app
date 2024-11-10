@@ -13,7 +13,7 @@ const Thermometer = ({ name, temperature, inputRange, color, increaseNumber }) =
     useEffect(() => {
         Animated.timing(animatedValue, {
             toValue: temperature + 5,
-            duration: (1000 + temperature * 5),
+            duration: (1000 + temperature),
             useNativeDriver: true,
         }).start();
         
